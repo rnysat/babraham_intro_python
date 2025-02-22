@@ -1,4 +1,6 @@
+
 """
+Exercise 1:
 Molarity Calculator 
 • Write a script to calculate how much of a compound is needed to make a solution of a given molarity.  
 
