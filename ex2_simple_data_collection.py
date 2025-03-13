@@ -1,4 +1,23 @@
 #Exercise 2: Data Structures: Lists and Dictionaries: Simple Data Collection
+
+"""Write a script which will prompt the user to enter 5 numeric values
+using 5 input statements.  
+
+Convert these to numbers using float() and put them into a list.
+
+Use the sort method to order the list then print it. 
+
+Use a list selection using [ ] to pull out and print just the first
+(lowest) value in the list. 
+
+Next reverse the sorted list and print it again so you can see the
+numbers from highest to lowest.
+
+Have a look at the documentation for the sort method to see how you
+could have done the sorting this way initially. 
+
+Finally print out a statement which uses the count method to say how
+many times the number 2 was present in the data. """
 num_list = []
 
 try:
