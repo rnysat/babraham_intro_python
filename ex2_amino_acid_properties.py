@@ -20,7 +20,19 @@ for i, v in enumerate(aa_monograph):
     aa_properties[v]["long_name"] = aa_long_name[i]
     aa_properties[v]["molecular_weight"] = aa_mol_weight[i]
 
-user_aa_monograph = input("Enter a 1-letter amino acid code in order to retrieve its long name and molecular weight: ")
+#user_aa_monograph = input("Enter a 1-letter amino acid code in order to retrieve its long name and molecular weight: ")
 
-print(f"""The 1-letter amino acid code {user_aa_monograph} refers to the amino acid with long name {aa_properties[user_aa_monograph]["long_name"]}
-      and molecular weight {aa_properties[user_aa_monograph]["molecular_weight"]} g/mol.""")
+#print(f"""The 1-letter amino acid code {user_aa_monograph} refers to the amino acid with long name {aa_properties[user_aa_monograph]["long_name"]}
+      #and molecular weight {aa_properties[user_aa_monograph]["molecular_weight"]} g/mol.""")
+
+#Exercise 3: Iteration and Condition: Iteration and Looping: Molecular Weights
+
+"""Use the amino acid properties data structure you made in Exercise 2 and calculate the total mass of the antigenic peptide:"""
+
+peptide = "TENKYSQLDEEQP"
+total_mass = 0
+
+for i in peptide:
+    total_mass += aa_properties[i]["molecular_weight"]
+
+print(f"The total mass of the antigenic peptide with the sequence {peptide} is {round(total_mass, 2)} g/mol.")
