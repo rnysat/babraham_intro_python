@@ -1,3 +1,23 @@
+"""Create a data structure to hold the following genomic positions taken from the human GRCh38 genome. 
+
+Chr1:90435481-90535480 
+Chr4:121080701-121180700 
+Chr5:58203396-58303395 
+Chr6:24011285-24111284 
+Chr7:27397324-27497323 
+Chr9:63677076-63777075 
+Chr12:57831538-57931537 
+Chr13:80438618-80538617 
+Chr16:86177236-86277235 
+Chr18:39459388-39559387 
+
+Use the code you wrote in last week’s exercise to generate random genomic positions, 
+only this time use a loop to generate positions and check them to see if they fall into any of the list of regions above.  
+Count how many times you hit each region.  
+Stop when any of the regions has 10 hits in it. 
+Finish by printing the number of hits you got to each region, 
+and the total number of random positions you had to generate to achieve this."""
+
 import random
 
 chr_names = ["chr"+str(i) for i in [1, 4, 5, 6, 7, 9, 12, 13, 16, 18]]
